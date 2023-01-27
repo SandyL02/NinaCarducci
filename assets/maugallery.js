@@ -190,6 +190,7 @@
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
           index = i;
+          console.log("193",activeImage)
         }
       });
       next = imagesCollection[index] || imagesCollection[0];
