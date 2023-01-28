@@ -190,7 +190,6 @@
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
           index = i;
-          console.log("193",activeImage)
         }
       });
       next = imagesCollection[index+1] || imagesCollection[0];
@@ -242,9 +241,7 @@
       }
       $(".active-tag").removeClass("active active-tag");
       $(this).addClass("active-tag active");
-      console.log(this)
-      
-
+    
       var tag = $(this).data("images-toggle");
 
       $(".gallery-item").each(function() {
