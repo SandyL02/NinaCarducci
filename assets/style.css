@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&amp;family=Spectral:ital,wght@0,400;1,300;1,400;1,800&amp;display=swap');
+
 body {
 	max-width: 1920px;
 	margin: auto;
@@ -152,16 +153,23 @@ nav a {
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: Spectral;
+	font-family: 'Spectral';
 	font-style: italic;
 	font-weight: 300;
-	font-size: 26px;
+	margin-top: 0;
+    margin-bottom: 0.5rem;
+	line-height: 1.2;
+	font-size: calc(1.375rem + 1.5vw);
 
 }
 .quote__author {
 	font-family: Spectral;
 	font-weight: 800;
 	font-size: 22px;
+}
+
+.meta-description {
+	margin-left: 5px;
 }
 
 #services {
@@ -251,6 +259,9 @@ form textarea {
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
+}
+.description {
+display: flex;
 }
 
 @media screen and (max-width: 1180px) {
